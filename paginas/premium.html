@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Argudo">
+    <meta name="description" content="Reto 1 GeeksHubs">
+    <title>Premium</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Normalize.css. Aplicando un reset CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+    <script src="../css/bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="../css/bootstrap/js/popper.min.js"></script>
+    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <header class="container-fluid fondo-premium">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="../index.html"> 
+                <img class="logo" src="../css/imagenes/spotify_logo.png" alt="web-logo">   
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="elemento-nav">
+                    <a class="nav-link" href="../paginas/premium.html">Premium</a>
+                </li>
+                <li class="elemento-nav desactivado">
+                    <a class="nav-link disabled" href="#">Ayuda</a>
+                </li>
+                <li class="elemento-nav desactivado">
+                    <a class="nav-link disabled" href="#">Descargar</a>
+                </li>
+                <li class="elemento-nav separador">
+                    <a class="nav-link disabled" href="#">|</a>
+                </li>
+                <li class="elemento-nav desactivado">
+                <a class="nav-link gris disabled" href="#">Registrarse</a>
+                </li>
+                <li class="elemento-nav">
+                    <a class="nav-link gris" href="../paginas/login.html">Iniciar sesión</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="header-premium text-white">
+            <div class="row h-100 text-black">
+                <div class="col align-self-center text-left ml-lg-5">
+                    <h1 class="titulo-home mt-5" id="premium-titulo">Consigue Premium gratis 1 mes</h1>
+                    <h3 class="font-weight-bold mt-4">Después, solo 9,99 €/mes. Cancelas cuando quieras.</h3>
+                    <button class="boton-principal expansible mt-4">Ver planes</button>
+                </div>       
+            </div>
+        </div>
+    </header>
+
+    <section class="premium-body">
+      <!-- VENTAJAS -->
+        <article class="ventajas">
+            <h1 class="text-center p-5">¿Por qué pasarte a Premium?</h1>
+
+            <div class="container card-group">
+                <div class="card text-center border-0">
+                  <img class="card-img-top icono align-self-center" src="../css/imagenes/iconos/descargar.png" alt="icono-descargar">
+                  <div class="card-body">
+                    <h5 class="card-title">Descarga música.</h5>
+                    <p class="card-text">Llévala siempre contigo.</p>
+                  </div>
+                </div>
+                <div class="card text-center border-0">
+                  <img class="card-img-top icono align-self-center" src="../css/imagenes/iconos/ads.png" alt="icono-ad">
+                  <div class="card-body">
+                    <h5 class="card-title">Sin anuncios.</h5>
+                    <p class="card-text">Disfruta de música sin interrupciones.</p>
+                  </div>
+                </div>
+                <div class="card text-center border-0">
+                  <img class="card-img-top icono align-self-center" src="../css/imagenes/iconos/musica.png" alt="icono-musica">
+                  <div class="card-body">
+                    <h5 class="card-title">Escucha lo que quieras.</h5>
+                    <p class="card-text">Incluso en el móvil.</p>
+                  </div>
+                </div>
+                <div class="card text-center border-0">
+                    <img class="card-img-top icono align-self-center" src="../css/imagenes/iconos/play.png" alt="icono-play">
+                    <div class="card-body">
+                      <h5 class="card-title">Salta todas las canciones que quieras.</h5>
+                      <p class="card-text">Simplemente dale a siguiente.</p>
+                    </div>
+                  </div>
+              </div>
+        </article>
+
+        <!-- PLANES -->
+        <article class="planes mt-5">
+            <h1 class="text-center pt-5">Elige tu premium</h1>
+            <p class="text-center">Escucha sin límites en tu teléfono, altavoz y otros dispositivos.</p>
+
+            <div class="container card-group mt-5">
+              <div class="row">
+                  <div class="card shadow col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card-body">
+                      <div class="badge-contenedor rounded mb-3">
+                        <p class="badge pb-0">1 mes gratis</p>
+                      </div>   
+                      <h5 class="card-title">Individual</h5>
+                      <p class="card-text">9,99 €/mes tras el plazo de la oferta.</p>
+                      <p class="card-text">1 cuenta</p>
+                      <div class="divisor"></div>
+                      <p class="card-text"><i class="fas fa-check"></i> Despídete de los anuncios.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Escucha música donde quieras, incluso sin conexión.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Reproducción a la carta.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                          <button class="boton-principal mt-4 w-100">Empezar</button>
+                    </div>
+                  </div>
+
+                  <div class="card shadow col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card-body">
+                      <div class="badge-contenedor rounded mb-3">
+                        <p class="badge pb-0">1 mes gratis</p>
+                      </div>   
+                      <h5 class="card-title">Duo</h5>
+                      <p class="card-text">12,99 €/mes tras el plazo de la oferta.</p>
+                      <p class="card-text">2 cuentas</p>
+                      <div class="divisor"></div>
+                      <p class="card-text"><i class="fas fa-check"></i> 2 cuentas Premium para parejas que vivan bajo el mismo techo.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Duo Mix: una playlist para dos que se actualiza regularmente con música que os gusta a los dos.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Música sin anuncios, sin conexión y a la carta.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                          <button class="boton-principal mt-4 w-100">Empezar</button>
+                    </div>
+                  </div>
+
+                  <div class="card shadow col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card-body">
+                      <div class="badge-contenedor rounded mb-3">
+                        <p class="badge">1 mes gratis</p>
+                      </div>   
+                      <h5 class="card-title">Plan familiar</h5>
+                      <p class="card-text">14,99 €/mes tras el plazo de la oferta.</p>
+                      <p class="card-text">Hasta 6 cuentas</p>
+                      <div class="divisor"></div>
+                      <p class="card-text"><i class="fas fa-check"></i> 6 cuentas Premium para familiares que vivan bajo el mismo techo.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Family Mix: una playlist para tu familia que se actualiza regularmente con música que os gusta a todos.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Bloquea la música explícita.</p>
+                      <p class="card-text"><i class="fas fa-check"></i> Música sin anuncios, sin conexión y a la carta.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                          <button class="boton-principal mt-4 w-100">Empezar</button>
+                    </div>
+                  </div>
+
+                  <div class="card shadow col-lg-3 col-md-6 col-sm-12 mb-4">
+                      <div class="card-body">
+                        <div class="badge-contenedor rounded mb-3">
+                          <p class="badge">1 mes gratis</p>
+                        </div>   
+                        <h5 class="card-title">Estudiantes</h5>
+                        <p class="card-text">4,99 €/mes tras el plazo de la oferta.</p>
+                        <p class="card-text">1 cuenta</p>
+                        <div class="divisor"></div>
+                        <p class="card-text"><i class="fas fa-check"></i> Descuento especial para universitarios que reúnan las condiciones.</p>
+                        <p class="card-text"><i class="fas fa-check"></i> Despídete de los anuncios.</p>
+                        <p class="card-text"><i class="fas fa-check"></i> Escucha música donde quieras, incluso sin conexión.</p>
+                        <p class="card-text"><i class="fas fa-check"></i> Reproducción a la carta.</p>                
+                      </div>
+                      <div class="card-footer bg-white border-0">                
+                          <button class="boton-principal mt-4 w-100">Empezar</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </article>
+    </section>
+   
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Argudo">
+    <meta name="description" content="Reto 1 GeeksHubs">
+    <title>Reto 1: Recreando web de Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Normalize.css. Aplicando un reset CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <script src="css/bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="css/bootstrap/js/popper.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="fondo-home">
+        <header class="container-fluid">
+                <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+                    <a class="navbar-brand" href="#"> 
+                        <img class="logo" src="css/imagenes/spotify_logo.png" alt="web-logo">   
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="elemento-nav">
+                            <a class="nav-link" href="./paginas/premium.html">Premium</a>
+                        </li>
+                        <li class="elemento-nav desactivado">
+                            <a class="nav-link disabled" href="#">Ayuda</a>
+                        </li>
+                        <li class="elemento-nav desactivado">
+                            <a class="nav-link disabled" href="#">Descargar</a>
+                        </li>
+                        <li class="elemento-nav separador">
+                            <a class="nav-link disabled" href="#">|</a>
+                        </li>
+                        <li class="elemento-nav desactivado">
+                          <a class="nav-link gris disabled" href="#">Registrarse</a>
+                        </li>
+                        <li class="elemento-nav">
+                            <a class="nav-link gris" href="./paginas/login.html">Iniciar sesión</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+        </header>
+
+        <section class="container-fluid">
+            <article class="row h-100 text-black">
+                <div class="col align-self-center text-center">
+                    <h1 class="titulo-home mt-5">Música para todos</h1>
+                    <h4>Millones de canciones. No hace falta tarjeta de crédito.</h4>
+                    <a href="./paginas/premium.html">
+                        <button class="boton-principal mt-3">CONSEGUIR SPOTIFY FREE</button>
+                    </a>
+                </div>       
+            </article>
+        </section>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 row-cols-lg-5 row-cols-xl-5">
+            <div class="col elemento-footer">
+                <a href="#"> 
+                    <img class="logo-footer" src="css/imagenes/spotify_logo.png" alt="web-logo">   
+                </a>
+            </div>
+            <div class="col elemento-footer">
+                <p class="subtitulo-footer">Empresa</p>
+                <ul class="listado-footer">
+                    <li>
+                        <a class="link-footer" href="#">Acerca de</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">Empleo</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">For the record</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col elemento-footer">
+                <p class="subtitulo-footer">Comunidades</p>
+                <ul class="listado-footer">
+                    <li>
+                        <a class="link-footer" href="#">Para artistas</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">Desarrolladores</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">Marcas</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">Inversores</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">Proveedores</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col elemento-footer">
+                <p class="subtitulo-footer">Enlaces útiles</p>
+                <ul class="listado-footer">
+                    <li>
+                        <a class="link-footer" href="#">Ayuda</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">Reproductor web</a>
+                    </li>
+                    <li>
+                        <a class="link-footer" href="#">App gratis para móvil</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12 elemento-footer">
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://www.instagram.com"> 
+                            <img class="instagram-logo" src="css/imagenes/instagram-logo.png" alt="instragram-logo">   
+                        </a>
+                        <a href="https://twitter.com"> 
+                            <img class="twitter-logo mt-1" src="css/imagenes/twitter-logo.png" alt="twitter-logo">   
+                        </a>
+                        <a href="https://facebook.com"> 
+                            <img class="facebook-logo ml-3" src="css/imagenes/facebook-logo.png" alt="facebook-logo">   
+                        </a>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

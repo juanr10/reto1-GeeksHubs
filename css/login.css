@@ -1,0 +1,140 @@
+html{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+/* HEADER
+=================================================  */
+header{
+    text-align: center;
+    height: 15vh;
+}
+/* Tamaño logo y posicion */
+.logo{
+    max-height: 10vh;
+    margin-top: 1rem;
+}
+/* Linea seperador */
+.separador{
+    border-bottom: 1px solid #d9dadc;
+}
+
+/* SECTION
+=================================================  */
+/* Estilo botones */
+.boton{
+    color: white;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+    white-space: normal;
+}
+.facebook{
+    background-color:#3b5998;
+}
+.facebook:hover{
+    background-color:#476bb8;
+}
+.apple{
+    background-color:#000;
+}
+.apple:hover{
+    background-color:rgb(56, 56, 56);
+}
+.primario{
+    margin: .8em 0 .5rem 0;
+    background-color:#1DB954;
+}
+.primario:hover{
+    background-color: #23da63;
+}
+.secundario{
+    color: #616467;
+    background-color: white;
+    border: 2px solid #616467;
+}
+.secundario:hover{
+    color: white;
+    background-color: #616467;
+}
+/* Linea en medio decoracion */
+span {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0 1rem 0;
+}
+span:before, span:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid#d9dadc;
+    margin: auto 1rem auto 1rem;
+}
+/* Modificando tamaño de linea para ajustarlo al formulario de abajo (solo en pantallas grandes) */
+span.col-lg-9{
+    max-width: 71%;
+}
+/* Estilos texto */
+.pregunta{
+    color: #1DB954;
+    margin-top: 0.5rem;
+}
+  
+
+/* MEDIAQUERIES
+=================================================  */
+/* Smartphones */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 799px) {
+     /* Header */
+     header{
+        height: auto;
+        padding: 1rem;
+    }
+    /* Logos */
+    .logo{
+        max-height: 7vh;
+        margin-top: 0;
+    }
+}
+
+/* Tablets (iPad) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+    /* Header */
+    header{
+        height: auto;
+        padding: 1rem;
+    }
+    /* Logos */
+    .logo{
+        max-height: 7vh;
+        margin-top: 0rem;
+    }
+}
+
+/* Dispositivos en horizontal-landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 799px) 
+and (orientation : landscape) {
+    /* Header */
+    header{
+        height: auto;
+        padding: 1rem;
+    }
+    /* Logos */
+    .logo{
+        max-height: 12vh;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,421 @@
+/**
+ * @titulo: Recreacion pagina web de Spotify.
+ * @autor: Juan Argudo.
+ * @version: v1-> 30/07/2020.
+*/
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    height: 100vh;
+}
+
+/* FONDO - HOME */
+.fondo-home{
+    background-image: url(imagenes/imagen-bg.jpg);
+    /* Imagen de fondo centrada vertical y horizontalmente */
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana para que la altura de la imagen no supere a la del contenido */
+    background-size: cover;
+    /* Fondo provisional hasta que la imagen cargue */
+    background-color:#f4b7b5;
+} 
+/* FONDO - PREMIUM */
+.fondo-premium{
+    /* Fondo de UIGradients */
+    background: #00b09b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00b09b, #96c93d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00b09b, #96c93d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* NAV
+================================================= */
+nav{
+    height: 13vh;
+    background: #000;
+    opacity: .7;
+}
+/* Navbar ocupa todo el ancho de la pantalla */
+.navbar {
+    padding: 0 !important;
+}
+/* Tamaño logo y posicion */
+.logo{
+    max-height: 7vh;
+    margin-left: 4rem;
+}
+/* Posicion boton despliegue de nav */
+nav>button{
+    margin-right: 1rem;
+}
+/* Estilos elementos del nav */
+.nav-link{
+    color: white !important;
+    font-weight: bold !important;
+    margin: .8rem;
+}
+.nav-link:hover{
+    color: #1ed760 !important;
+}
+.gris{
+    color: #d9dadc !important;
+}
+/* Editando despliegue de nav en dispositivos pequeños */
+button.navbar-toggler {
+    border-color: white !important;
+} 
+.navbar-collapse {
+    background-color: black !important;
+}
+/* Marcando funciones no disponibles de nav */
+.desactivado{
+    cursor: not-allowed;
+}
+
+/* HEADER - PREMIUM
+================================================= */
+.header-premium{
+    height: 80vh;
+}
+
+/* SECTION - HOME
+================================================= */
+section{
+    height: 100vh;
+}
+.titulo-home{
+    font-size: 5rem;
+    font-weight: bold;
+}
+/* Estilo boton principal */
+.boton-principal{
+    background-color:#1DB954;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 500px;
+    padding: 16px 48px 18px;
+}
+.boton-principal:hover{
+    background-color:#23da63;
+}
+
+/* SECTION - PREMIUM
+================================================= */
+/* Tamaño iconos */
+.icono{
+    max-height: 17vh;
+    max-width: 17vh;
+}
+.premium-body{
+    height: 200vh;
+    color:#222326;
+}
+.ventajas{
+    background: white;
+}   
+.planes{
+    background: rgb(243, 241, 241);
+}
+.divisor{
+    border-bottom: 1px solid #d9dadc;
+    margin-bottom: 1rem;
+}
+/* Estilos h1 */
+article>h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+/* Estilos card */
+.card-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.badge-contenedor{
+    background-color: rgb(46, 119, 208);
+    display:inline-block;
+    text-align: center;
+}
+.badge{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem !important;
+    margin: 0 auto;
+}
+
+/* FOOTER - HOME
+================================================= */
+footer{
+    background: #000;
+    height: auto;
+}
+.logo-footer{
+    max-height: 6vh;
+    margin-left: 3.1rem;
+}
+.elemento-footer{
+    margin-top: 3rem;
+    color: white;
+}
+.subtitulo-footer{
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    line-height: 1.4;
+    color: #919496;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.listado-footer{
+    list-style: none;
+    padding: 0;
+}
+.listado-footer>li{
+    margin-bottom: 1.5rem;
+}
+.link-footer{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.link-footer:link{
+    text-decoration: none;
+}
+.link-footer:hover{
+    color:#23da63;
+}
+.instagram-logo{
+    max-height: 12vh;
+}
+.twitter-logo{
+    max-height: 7vh;
+}
+.facebook-logo{
+    max-height: 7vh;
+}
+
+/* MEDIAQUERIES
+=================================================  */
+/* Smartphones */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 799px) {
+    /* Header */
+    /* Posicion boton despliegue de nav */
+    nav{
+        height: auto;
+    }
+    nav>button{
+        margin-right: 1rem;
+    }
+    /* Tamaño fuente de nav */
+    li>a{
+        font-size: 1.1rem;
+    }
+    /* Margenes elementos de nav */
+    .nav-link{
+        margin: 0.5rem 0 0.5rem 1rem;
+    }
+    /* Ocultar separador */
+    .separador{
+        display: none;
+    }
+    /* Section */
+    section{
+        height: 88vh;
+    }
+    /* Tamaño fuente section */
+    .titulo-home{
+        font-size: 3.5rem;
+    }
+    /* Tamaño fuente boton principal */
+    .boton-principal{
+        font-size: .8rem;
+    }
+    /* Logos */
+    .logo{
+        margin: 1rem;
+    }
+    .logo-footer{
+        margin-left: 0;
+    }
+
+    /* Pagina premium */
+    .header-premium{
+        height: 88vh;
+    }
+    /* Tamaño de fuente*/
+    h3{
+        font-size: 1.5rem !important;
+    }
+    /* Botones */
+    .expansible{
+        width: 100%;
+        font-weight: bolder;
+    }
+}
+
+/* Dispositivos en horizontal-landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 799px) 
+and (orientation : landscape) {
+    /* Header */
+    nav{
+        height: auto;
+    }
+    nav>button{
+        margin-right: 1rem;
+    }
+    li>a{
+        font-size: 1rem;
+    }
+    .nav-link{
+        margin: 0.5rem 0 0.5rem 1rem;
+    }
+    .separador{
+        display: none;
+    }
+    /* Section */
+    section{
+        height: 100vh;
+    }
+    /* Logos */
+    .logo{
+        max-height: 10vh;
+    }
+    .logo-footer{
+        max-height: 10vh;
+    }
+    .instagram-logo{
+        max-height: 17vh;
+    }
+    .twitter-logo{
+        max-height: 9vh;
+    }
+    .facebook-logo{
+        max-height: 9vh;
+    }
+    /* Pagina premium */
+    .header-premium{
+        height: 110vh;
+    }
+    #premium-titulo{
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablets (iPad) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+    /* Header */
+    nav{
+        height: auto;
+    }
+    nav>button{
+        margin-right: 4rem;
+    }
+    li>a{
+        font-size: 1.2rem;
+    }
+    .separador{
+        display: none;
+    }
+    /* Section */
+    section{
+        height: 58vh;
+    }
+    /* Logos */
+    .logo{
+        max-height: 6vh;
+        margin-left: 4rem;
+    }
+    .logo-footer{
+        max-height: 3.5vh;
+        margin-left: 2rem;
+    }
+    .instagram-logo{
+        max-height: 9vh;
+    }
+    .twitter-logo{
+        max-height: 5vh;
+    }
+    .facebook-logo{
+        max-height: 5vh;
+    }
+
+    /* PREMIUM */
+    .header-premium{
+        height: 57vh;
+    }
+    #premium-titulo{
+        font-size: 3rem;
+    }
+    .premium-body{
+        height: auto;
+    }
+    .icono{
+        max-height: 11vh;
+        max-width: 11vh;
+    }
+    /* Botones */
+    .expansible{
+        width: 35%;
+        font-weight: bolder;
+    }
+    .card{
+        width: 100% !important;
+    }
+}
+
+/* Tablets horizontal-landscape (iPad) */
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    /* Header */
+    nav{
+        height: 12vh;
+    }
+    li>a{
+        font-size: 1rem;
+    }
+    /* Section */
+    section{
+        height: 76vh;
+    }
+    /* Mostrar separador */
+    .separador{
+        display: block;
+    }
+    /* Logos */
+    .logo{
+        max-height: 7vh;
+    }
+    .logo-footer{
+        max-height: 5vh;
+    }
+    .instagram-logo{
+        max-height: 8vh;
+    }
+    .twitter-logo{
+        max-height: 4vh;
+    }
+    .facebook-logo{
+        max-height: 4vh;
+    }
+}
+
+/* NOTAS: 
+-   En varias propiedades se ha añadido !important ya que es la única manera de cambiar ciertas propiedades que vienen establecidas por 
+    defecto en el framework (bootstrap) usado. 
+-   MediaQueries probadas con la herramienta del navegador firefox simulando los dispositivos: iPhone (tamaño smartphones), iPad (tamaño tablets)
+    y otros dispositivos.
+*/

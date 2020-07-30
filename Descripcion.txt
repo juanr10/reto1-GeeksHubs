@@ -1,0 +1,6 @@
+Reto 1 GeeksHubs.
+
+Para este primer reto he decidido recrear la web de Spotify con ayuda de Bootstrap.
+Las páginas que he elegido para el proyecto son: Home, Iniciar sesión y Premium.
+
+Juan Esteban Argudo Mendieta.
